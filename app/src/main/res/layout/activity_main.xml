@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jjkjkh"
+    android:orientation="vertical"
+
+    tools:context="MainActivity">
+
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5sp"
+        android:layout_marginBottom="1pt"
+        android:layout_weight="1"
+        android:background="@color/cardview_shadow_start_color"
+        android:ems="10"
+        android:gravity="right|center"
+        android:inputType="textPersonName"
+        android:text="0"
+        android:textSize="40sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1pt">
+
+            <Button
+                android:id="@+id/btnAC"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
+                android:onClick="acEvent"
+                android:text="AC"
+                tools:ignore="SpeakableTextPresentCheck"></Button>
+
+            <Button
+                android:id="@+id/plusminus"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
+                android:text="+/-"
+                tools:ignore="SpeakableTextPresentCheck"></Button>
+
+            <Button
+                android:id="@+id/divide"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
+                android:onClick="operatorEvent"
+                android:text="/"
+                tools:ignore="SpeakableTextPresentCheck"></Button>
+
+            <Button
+                android:id="@+id/multiply"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/design_default_color_primary_dark"
+                android:onClick="operatorEvent"
+                android:text="*"
+                android:textColor="#FFF"
+                tools:ignore="SpeakableTextPresentCheck"></Button>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1pt">
+
+            <Button
+                android:id="@+id/bu7"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
+                android:onClick="numberEvent"
+                android:text="7"
+                tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/bu8"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
+                android:onClick="numberEvent"
+                android:text="8"
+                tools:ignore="SpeakableTextPresentCheck"></Button>
+
+            <Button
+                android:id="@+id/bu9"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
+                android:onClick="numberEvent"
+                android:text="9"
+                tools:ignore="SpeakableTextPresentCheck"></Button>
+
+            <Button
+                android:id="@+id/bupercent"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+
+                android:layout_weight="1"
+                android:background="@color/design_default_color_primary_dark"
+                android:onClick="percentEvent"
+                android:text="%"
+                android:textColor="#FFF"
+                tools:ignore="SpeakableTextPresentCheck"></Button>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1pt">
+
+            <Button
+                android:id="@+id/bu4"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
+                android:onClick="numberEvent"
+                android:text="4"
+                tools:ignore="SpeakableTextPresentCheck"></Button>
+
+            <Button
+                android:id="@+id/bu5"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
+                android:onClick="numberEvent"
+                android:text="5"
+                tools:ignore="SpeakableTextPresentCheck"></Button>
+
+            <Button
+                android:id="@+id/bu6"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
+                android:onClick="numberEvent"
+                android:text="6"
+                tools:ignore="SpeakableTextPresentCheck"></Button>
+
+            <Button
+                android:id="@+id/buplus"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+
+                android:layout_weight="1"
+                android:background="@color/design_default_color_primary_dark"
+                android:onClick="operatorEvent"
+                android:text="+"
+                android:textColor="#FFF"
+                tools:ignore="SpeakableTextPresentCheck"></Button>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1pt">
+
+            <Button
+                android:id="@+id/bu1"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
+                android:onClick="numberEvent"
+                android:text="1"
+                tools:ignore="SpeakableTextPresentCheck"></Button>
+
+            <Button
+                android:id="@+id/bu2"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
+                android:onClick="numberEvent"
+                android:text="2"
+                tools:ignore="SpeakableTextPresentCheck"></Button>
+
+            <Button
+                android:id="@+id/bu3"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
+                android:onClick="numberEvent"
+                android:text="3"
+                tools:ignore="SpeakableTextPresentCheck"></Button>
+
+            <Button
+                android:id="@+id/buminus"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/design_default_color_primary_dark"
+                android:onClick="operatorEvent"
+                android:text="-"
+                android:textColor="#FFF"
+                tools:ignore="SpeakableTextPresentCheck"></Button>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1pt">
+
+            <Button
+                android:id="@+id/bu0"
+                android:layout_width="46pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="2"
+                android:background="@color/purple_500"
+                android:onClick="numberEvent"
+                android:text="0"
+                tools:ignore="SpeakableTextPresentCheck"></Button>
+
+            <Button
+                android:id="@+id/budot"
+                android:layout_width="46pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="2"
+                android:background="@color/purple_500"
+                android:onClick="numberEvent"
+                android:text="."
+                tools:ignore="SpeakableTextPresentCheck"></Button>
+
+            <Button
+                android:id="@+id/buequal"
+                android:layout_width="46pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="2"
+                android:background="@color/purple_500"
+                android:onClick="equalEvent"
+                android:text="="
+                tools:ignore="SpeakableTextPresentCheck"></Button>
+
+        </TableRow>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
